@@ -77,8 +77,10 @@ def execute_steps_via_ssh(channel, steps):
         out = channel.recv(9999)
         print(out.decode('cp1256'))
         if 'invalid signon attempts.' in out.decode('cp1256') or 'Device/IP address is locked in' in out.decode('cp1256') or 'Do you really want to halt? YES//' in out.decode('cp1256') or 'Not a valid ACCESS CODE' in out.decode('cp1256') :
+            print(f"Sorry, invalid signon attempts, i will retry after 5 min")
+            time.sleep(300)
             extract_data() 
-            raise Exception("Sorry, invalid signon attempts")
+            
 def extract_data():
     """Main function to extract data by connecting to the database and performing SSH operations."""
     conn = establish_connection()
