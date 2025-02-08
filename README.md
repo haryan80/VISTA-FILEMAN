@@ -5,7 +5,7 @@ Here's the documentation for the provided Python code in Markdown format:
 # Data Extraction and Processing Script
 
 ## Overview
-This script is designed to extract vital signs data from a SQL Server database, process it, and then insert the parsed data into another database. The script involves establishing database and SSH connections, handling large amounts of data, and performing batch inserts into the database.
+This script is designed to extract  data from a vista fileman, process it, and then insert the parsed data into another database. The script involves establishing database and SSH connections, handling large amounts of data, and performing batch inserts into the database.
 
 ## Prerequisites
 The script requires the following Python libraries:
