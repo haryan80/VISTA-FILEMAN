@@ -1,39 +1,30 @@
-Here's the documentation for the provided Python code in Markdown format:
+VA FileMan Data Extraction and Automation
 
----
+Overview
 
-# Data Extraction and Processing Script
+VA FileMan is the database management system for the Veterans Health Information Systems and Technology Architecture (VistA) environment. It enables the creation and maintenance of databases within VistA, allowing users to manage healthcare-related information efficiently.
 
-## Overview
-This script is designed to extract  data from a vista fileman, process it, and then insert the parsed data into another database. The script involves establishing database and SSH connections, handling large amounts of data, and performing batch inserts into the database.
+Data Extraction from VistA FileMan
 
-## Prerequisites
-The script requires the following Python libraries:
-- `os`
-- `time`
-- `warnings`
-- `pyodbc`
-- `pandas`
-- `numpy`
-- `tqdm`
-- `paramiko`
-- `datetime`
-- `IPython.display`
+Extracting data from VA FileMan involves querying the system to retrieve relevant healthcare records. The extraction process typically follows these steps:
 
-Install these libraries using `pip` if they are not already installed:
-```bash
-pip install pyodbc pandas numpy tqdm paramiko ipython
-```
+Connect to VistA - Establish a secure connection to the VistA system.
 
-## Constants
-The script defines several constants, which should be updated with your environment-specific values:
-- `SERVER_NAME`: Name of the SQL Server.
-- `DATABASE`: Name of the database.
-- `UID`: Database username.
-- `PWD`: Database password.
-- `BATCH_SIZE`: Number of records to process in each batch.
-- `FILEMAN_IP`, `FILEMAN_USER`, `FILEMAN_PASSWORD`: SSH credentials for FileMan.
-- `VISTA_USERNAME`, `VISTA_PASSWORD`: Credentials for VISTA.
+Run Queries - Use VA FileMan's built-in query tools to extract structured data.
+
+Export Data - Save the extracted data in a structured format (e.g., CSV, xlsx, .
+
+Parsing Extracted Data
+
+Once the data is extracted, it needs to be parsed and processed for further use. This includes validating formats, cleaning inconsistencies, and transforming the data for storage.
+
+Automating Data Extraction Using Paramiko
+
+To automate the data extraction process, we can use Paramiko, a Python library for SSH connections. This allows us to securely connect to the VistA system and automate data retrieval.
+
+Storing Data in an SQL Database
+
+After extracting and parsing the data, it can be stored in an SQL database for further analysis and retrieval.entials for VISTA.
 - `optimus_prime`, `optimus_random`: Parameters for data encoding.
 
 Update the following constant with the path to the Excel file used for setting up FileMan:
