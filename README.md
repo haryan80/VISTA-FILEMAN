@@ -79,7 +79,6 @@ Replace `script_name.py` with the actual name of your script file.
 
 ## Notes
 - Ensure that all required credentials and paths are correctly set in the script before execution.
-- The script logs SSH operations to `patient_vitals.log`.
 - If an error occurs, the script will wait 5 minutes before retrying the operation.
 
 ---
