@@ -74,10 +74,6 @@ Main loop function that runs the data extraction and parsing processes. It handl
 ## Usage
 The script is designed to be run continuously in an environment where data needs to be extracted and processed regularly. It handles errors gracefully and retries operations after a brief pause. The script will loop indefinitely, processing data every 12 hours.
 
-To run the script, simply execute it:
-```bash
-python script_name.py
-```
 
 Replace `script_name.py` with the actual name of your script file.
 
